@@ -11,6 +11,8 @@
     <link rel=alternate href=/feed.xml type=application/rss+xml title='Inscription RSS Feed'>
     <link rel=stylesheet href=/static/index.css>
     <link rel=stylesheet href=/static/modern-normalize.css>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src=/static/index.js defer></script>
   </head>
   <body>
@@ -19,7 +21,7 @@
       <a href=/>Ordinals<sup>{{ self.superscript() }}</sup></a>
       <a href=https://docs.ordinals.com/>Handbook</a>
       <a href=https://github.com/casey/ord>Wallet</a>
-      <a href="https://twitter.com/LitecoinOrd">LitecoinOrd</a>
+    <a href="https://twitter.com/LitecoinOrd">LitecoinOrd</a>
       <a href=/clock>Clock</a>
 %% if self.has_sat_index {
       <a href=/rare.txt>rare.txt</a>
@@ -31,6 +33,9 @@
     </nav>
   </header>
   <main>
+    <div class="bubble-twitter">
+      <a href="https://twitter.com/LitecoinOrdinal" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
 $$ Trusted(&self.content)
   </main>
   </body>
